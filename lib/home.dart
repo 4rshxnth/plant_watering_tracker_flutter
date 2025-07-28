@@ -10,7 +10,7 @@ class Home extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.white,
         elevation: 0,
-        leading: const Icon(Icons.settings, color: Colors.black, size: 30),
+        leading: Icon(Icons.settings, color: Colors.black, size: 30),
         actions: [
           Padding(
             padding: const EdgeInsets.only(right: 16),
@@ -29,7 +29,7 @@ class Home extends StatelessWidget {
         padding: const EdgeInsets.all(16.0),
         child: ListView(
           children: [
-            const Text(
+            Text(
               'Water Today',
               style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
             ),
@@ -238,6 +238,224 @@ class Home extends StatelessWidget {
                         child: Icon(
                           Icons.water_drop_outlined,
                           color: Colors.teal,
+                          size: 30,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+            SizedBox(height: 10),
+            Card(
+              color: Color.fromARGB(184, 153, 153, 153),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(12),
+              ),
+              child: Padding(
+                padding: const EdgeInsets.all(10.0),
+                child: Row(
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    Image.asset(
+                      'assets/Plants 4.png',
+                      height: 100,
+                      width: 100,
+                      fit: BoxFit.cover,
+                    ),
+                    SizedBox(width: 12),
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        SizedBox(height: 8),
+                        SizedBox(
+                          width: 140,
+                          child: Text(
+                            'Peperomia argyreia',
+                            style: TextStyle(
+                              fontWeight: FontWeight.w900,
+                              fontSize: 22,
+                              height: 1,
+                              color: Colors.grey[800],
+                            ),
+                            softWrap: true,
+                          ),
+                        ),
+                        SizedBox(height: 10),
+                        Row(
+                          children: [
+                            Icon(
+                              Icons.water_drop_outlined,
+                              size: 18,
+                              color: Colors.grey[800],
+                            ),
+                            Text(
+                              '250 ml',
+                              style: TextStyle(
+                                fontSize: 16,
+                                color: Colors.grey[800],
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                    Spacer(),
+                    Padding(
+                      padding: const EdgeInsets.all(10.0),
+                      child: CircleAvatar(
+                        backgroundColor: Colors.grey[600],
+                        radius: 25,
+                        child: Icon(
+                          Icons.done,
+                          color: Colors.grey[800],
+                          size: 30,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+            SizedBox(height: 40),
+            Text(
+              'Fri, February 7',
+              style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+            ),
+            Card(
+              color: Color.fromARGB(184, 238, 199, 255),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(12),
+              ),
+              child: Padding(
+                padding: const EdgeInsets.all(10.0),
+                child: Row(
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    Image.asset(
+                      'assets/Plants 5.png',
+                      height: 100,
+                      width: 100,
+                      fit: BoxFit.cover,
+                    ),
+                    SizedBox(width: 12),
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        SizedBox(height: 8),
+                        SizedBox(
+                          width: 140,
+                          child: Text(
+                            'Asplenium nidus',
+                            style: TextStyle(
+                              fontWeight: FontWeight.w900,
+                              fontSize: 22,
+                              height: 1,
+                            ),
+                            softWrap: true,
+                          ),
+                        ),
+                        SizedBox(height: 10),
+                        Row(
+                          children: [
+                            Icon(
+                              Icons.water_drop_outlined,
+                              size: 18,
+                              color: Colors.purple,
+                            ),
+                            Text(
+                              '500 ml',
+                              style: TextStyle(
+                                fontSize: 16,
+                                color: Colors.purple,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                    Spacer(),
+                    Padding(
+                      padding: const EdgeInsets.all(10.0),
+                      child: CircleAvatar(
+                        backgroundColor: Colors.white,
+                        radius: 25,
+                        child: Icon(
+                          Icons.water_drop_outlined,
+                          color: Colors.purple,
+                          size: 30,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+            SizedBox(height: 10),
+            Card(
+              color: Color.fromARGB(184, 238, 199, 255),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(12),
+              ),
+              child: Padding(
+                padding: const EdgeInsets.all(10.0),
+                child: Row(
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    Image.asset(
+                      'assets/Plants 1.png',
+                      height: 100,
+                      width: 100,
+                      fit: BoxFit.cover,
+                    ),
+                    SizedBox(width: 12),
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        SizedBox(height: 8),
+                        SizedBox(
+                          width: 140,
+                          child: Text(
+                            'Filodendro Atom',
+                            style: TextStyle(
+                              fontWeight: FontWeight.w900,
+                              fontSize: 22,
+                              height: 1,
+                            ),
+                            softWrap: true,
+                          ),
+                        ),
+                        SizedBox(height: 10),
+                        Row(
+                          children: [
+                            Icon(
+                              Icons.water_drop_outlined,
+                              size: 18,
+                              color: Colors.green,
+                            ),
+                            Text(
+                              '250 ml',
+                              style: TextStyle(
+                                fontSize: 16,
+                                color: Colors.green,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                    Spacer(),
+                    Padding(
+                      padding: const EdgeInsets.all(10.0),
+                      child: CircleAvatar(
+                        backgroundColor: Colors.white,
+                        radius: 25,
+                        child: Icon(
+                          Icons.water_drop_outlined,
+                          color: Colors.green,
                           size: 30,
                         ),
                       ),
