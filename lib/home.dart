@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 class Home extends StatelessWidget {
   const Home({super.key});
 
-  // Sample data: Dates & plant details
   final List<Map<String, dynamic>> wateringSchedule = const [
     {
       "date": "Today",
